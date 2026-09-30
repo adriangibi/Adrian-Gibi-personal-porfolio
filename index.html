@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adrian Gibi | Engineering Student & Developer</title>
+  <meta name="description" content="Portfolio of Adrian Gibi, a 2nd-year engineering student at Amal Jyothi College of Engineering, showcasing projects, skills, education, and technical interests." />
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Adrian Gibi | Engineering Student & Developer" />
+  <meta property="og:description" content="Portfolio of Adrian Gibi, 2nd Year B.Tech Engineering student at Amal Jyothi College of Engineering." />
+  <meta property="og:type" content="website" />
+  
+  <!-- Google Fonts: Outfit, Inter, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor Glow (Desktop) -->
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-text">&lt;AdrianGibi<span class="logo-accent">/&gt;</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#exploring" class="nav-link">Exploring</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <a href="#resume-cta" class="btn btn-crimson btn-sm">Download Resume</a>
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge fade-in">
+            <span class="pulse-dot"></span>
+            <span>Open to Learning & Opportunities</span>
+          </div>
+
+          <span class="hero-greeting fade-in delay-1">Hello, I'm</span>
+          <h1 class="hero-title name-large fade-in delay-1">
+            Adrian Gibi
+          </h1>
+
+          <h2 class="hero-role fade-in delay-2">
+            2nd Year Engineering Student <span class="divider">|</span> Developer <span class="divider">|</span> Problem Solver
+          </h2>
+
+          <p class="hero-subtitle fade-in delay-2">
+            I'm a 2nd-year engineering student at <strong>Amal Jyothi College of Engineering</strong>, passionate about programming, artificial intelligence, problem solving, and building meaningful digital experiences.
+          </p>
+
+          <div class="hero-buttons fade-in delay-3">
+            <a href="#projects" class="btn btn-crimson btn-lg">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-glass btn-lg">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Let's Connect</span>
+            </a>
+            <a href="#resume-cta" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-email-bar fade-in delay-4">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:adrian.gibi10@gmail.com" class="hero-email-link">adrian.gibi10@gmail.com</a>
+            <span class="divider" style="color: var(--accent-crimson); margin: 0 0.4rem;">|</span>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+918086243346" class="hero-email-link">+91 8086243346</a>
+          </div>
+        </div>
+
+        <!-- HERO VISUAL (Floating Code Editor) -->
+        <div class="hero-visual fade-in delay-2">
+          <div class="glass-card hero-code-editor">
+            <div class="editor-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="editor-title">developer.js</span>
+            </div>
+            <div class="editor-body">
+              <pre><code><span class="c-keyword">const</span> <span class="c-variable">developer</span> = {
+  <span class="c-key">name</span>: <span class="c-string">"Adrian Gibi"</span>,
+  <span class="c-key">role</span>: <span class="c-string">"Engineering Student"</span>,
+  <span class="c-key">college</span>: <span class="c-string">"Amal Jyothi College"</span>,
+  <span class="c-key">interests</span>: [
+    <span class="c-string">"Python"</span>,
+    <span class="c-string">"Java"</span>,
+    <span class="c-string">"AI"</span>,
+    <span class="c-string">"Problem Solving"</span>
+  ]
+};</code></pre>
+            </div>
+            <div class="floating-tech-badge badge-1">
+              <i class="fa-brands fa-python"></i> Python
+            </div>
+            <div class="floating-tech-badge badge-2">
+              <i class="fa-brands fa-java"></i> Java
+            </div>
+            <div class="floating-tech-badge badge-3">
+              <i class="fa-solid fa-brain"></i> AI Logic
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">WHO I AM</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio glass-card">
+            <h3 class="bio-heading">Student → Learner → Builder → Future Engineer</h3>
+            <p>
+              I'm <strong>Adrian Gibi</strong>, a second-year engineering student at <strong>Amal Jyothi College of Engineering</strong>. I enjoy learning programming, exploring artificial intelligence, solving problems, and developing projects that help me understand technology through practical experience.
+            </p>
+
+            <div class="info-cards-grid">
+              <div class="info-mini-card">
+                <div class="mini-icon">🎓</div>
+                <div class="mini-content">
+                  <span class="mini-label">Education</span>
+                  <span class="mini-val">2nd Year Engineering Student</span>
+                </div>
+              </div>
+
+              <div class="info-mini-card">
+                <div class="mini-icon">🏫</div>
+                <div class="mini-content">
+                  <span class="mini-label">College</span>
+                  <span class="mini-val">Amal Jyothi College of Engineering</span>
+                </div>
+              </div>
+
+              <div class="info-mini-card">
+                <div class="mini-icon">💻</div>
+                <div class="mini-content">
+                  <span class="mini-label">Interests</span>
+                  <span class="mini-val">Programming & Technology</span>
+                </div>
+              </div>
+
+              <div class="info-mini-card">
+                <div class="mini-icon">📍</div>
+                <div class="mini-content">
+                  <span class="mini-label">Location</span>
+                  <span class="mini-val">Kerala, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="stat-number">2nd Year</div>
+              <div class="stat-label">B.Tech Student at AJCE</div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <div class="stat-number">3</div>
+              <div class="stat-label">Academic & Personal Projects</div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <div class="stat-number">2</div>
+              <div class="stat-label">Core Tech Stacks Mastered</div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Passion for Innovation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY INTERESTS SECTION -->
+    <section class="section interests-section" id="interests">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">WHAT DRIVES ME</span>
+          <h2 class="section-title">My <span class="gradient-text">Interests</span></h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="interests-grid">
+          <div class="interest-card glass-card">
+            <div class="interest-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Programming</h3>
+            <p>Learning and practicing programming through academic and personal projects.</p>
+          </div>
+
+          <div class="interest-card glass-card">
+            <div class="interest-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Artificial Intelligence</h3>
+            <p>Exploring AI concepts and knowledge-based systems.</p>
+          </div>
+
+          <div class="interest-card glass-card">
+            <div class="interest-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+            <h3>Problem Solving</h3>
+            <p>Improving logical thinking through algorithms and programming problems.</p>
+          </div>
+
+          <div class="interest-card glass-card">
+            <div class="interest-icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Web Development</h3>
+            <p>Building simple and interactive web experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">MY CAPABILITIES</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-desc">Honest capabilities organized by core technology domains</p>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skills-grid">
+            <!-- Programming -->
+            <div class="skill-category-card glass-card">
+              <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Programming</h3>
+              </div>
+              <div class="skill-badge-grid">
+                <div class="skill-badge familiar">
+                  <i class="fa-brands fa-python"></i>
+                  <span>Python</span>
+                  <span class="badge-status">Familiar</span>
+                </div>
+                <div class="skill-badge familiar">
+                  <i class="fa-brands fa-java"></i>
+                  <span>Java</span>
+                  <span class="badge-status">Familiar</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skill-category-card glass-card">
+              <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3>Web Development</h3>
+              </div>
+              <div class="skill-badge-grid">
+                <div class="skill-badge familiar">
+                  <i class="fa-brands fa-html5"></i>
+                  <span>HTML</span>
+                  <span class="badge-status">Familiar</span>
+                </div>
+                <div class="skill-badge familiar">
+                  <i class="fa-brands fa-js"></i>
+                  <span>JavaScript</span>
+                  <span class="badge-status">Familiar</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Computer Science -->
+            <div class="skill-category-card glass-card">
+              <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>Computer Science</h3>
+              </div>
+              <div class="skill-badge-grid">
+                <div class="skill-badge learning">
+                  <i class="fa-solid fa-diagram-project"></i>
+                  <span>Data Structures</span>
+                  <span class="badge-status">Learning</span>
+                </div>
+                <div class="skill-badge learning">
+                  <i class="fa-solid fa-square-root-variable"></i>
+                  <span>Algorithms</span>
+                  <span class="badge-status">Learning</span>
+                </div>
+                <div class="skill-badge familiar">
+                  <i class="fa-solid fa-cubes"></i>
+                  <span>Object-Oriented Programming</span>
+                  <span class="badge-status">Familiar</span>
+                </div>
+                <div class="skill-badge exploring">
+                  <i class="fa-solid fa-robot"></i>
+                  <span>Artificial Intelligence</span>
+                  <span class="badge-status">Exploring</span>
+                </div>
+                <div class="skill-badge familiar">
+                  <i class="fa-solid fa-database"></i>
+                  <span>Database Concepts</span>
+                  <span class="badge-status">Familiar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENTLY LEARNING ROADMAP -->
+    <section class="section exploring-section" id="exploring">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">LEARNING ROADMAP</span>
+          <h2 class="section-title">Currently <span class="gradient-text">Exploring</span></h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="roadmap-grid">
+          <div class="roadmap-card glass-card">
+            <div class="roadmap-num">01</div>
+            <h3>Data Structures & Algorithms</h3>
+          </div>
+
+          <div class="roadmap-card glass-card">
+            <div class="roadmap-num">02</div>
+            <h3>Artificial Intelligence</h3>
+          </div>
+
+          <div class="roadmap-card glass-card">
+            <div class="roadmap-num">03</div>
+            <h3>Python Programming</h3>
+          </div>
+
+          <div class="roadmap-card glass-card">
+            <div class="roadmap-num">04</div>
+            <h3>Java & Object-Oriented Programming</h3>
+          </div>
+
+          <div class="roadmap-card glass-card">
+            <div class="roadmap-num">05</div>
+            <h3>Web Development</h3>
+          </div>
+
+          <div class="roadmap-card glass-card">
+            <div class="roadmap-num">06</div>
+            <h3>Problem Solving</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">PORTFOLIO WORK</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-desc">A collection of academic and personal projects built while learning and exploring technology.</p>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 01 -->
+          <div class="project-card glass-card">
+            <div class="project-banner">
+              <span class="banner-badge">Artificial Intelligence</span>
+              <div class="project-icon-bg"><i class="fa-solid fa-robot"></i></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Automated Insurance Claim Damage Appraisal Agent</h3>
+              <p class="project-desc">
+                An academic AI project that explores automated insurance claim damage appraisal using knowledge representation and logical inference.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Knowledge Representation</span>
+                <span class="tag">First-Order Logic</span>
+                <span class="tag">Forward Chaining</span>
+                <span class="tag">Backward Chaining</span>
+              </div>
+              <div class="project-links">
+                <a href="#featured-ai" class="project-btn demo-btn"><i class="fa-solid fa-arrow-right"></i> View Project Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 02 -->
+          <div class="project-card glass-card">
+            <div class="project-banner">
+              <span class="banner-badge">Python / Data Structures</span>
+              <div class="project-icon-bg"><i class="fa-brands fa-python"></i></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Python Data Structure Projects</h3>
+              <p class="project-desc">
+                A collection of Python implementations created to understand data structures, algorithms, and problem-solving techniques.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Algorithms</span>
+              </div>
+              <div class="project-links">
+                <span class="project-btn placeholder-btn"><i class="fa-solid fa-code"></i> Academic Repository</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 03 -->
+          <div class="project-card glass-card">
+            <div class="project-banner">
+              <span class="banner-badge">Java / OOP</span>
+              <div class="project-icon-bg"><i class="fa-brands fa-java"></i></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Java Programming Projects</h3>
+              <p class="project-desc">
+                Academic Java projects focused on object-oriented programming, classes, objects, methods, and problem solving.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Java</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Classes & Objects</span>
+              </div>
+              <div class="project-links">
+                <span class="project-btn placeholder-btn"><i class="fa-solid fa-code"></i> Academic Repository</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 04 -->
+          <div class="project-card glass-card">
+            <div class="project-banner">
+              <span class="banner-badge">Web Development</span>
+              <div class="project-icon-bg"><i class="fa-brands fa-html5"></i></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Web Development Projects</h3>
+              <p class="project-desc">
+                Interactive web projects created while learning HTML and JavaScript.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">DOM Manipulation</span>
+              </div>
+              <div class="project-links">
+                <span class="project-btn placeholder-btn"><i class="fa-solid fa-globe"></i> Web Prototypes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIAL FEATURED AI PROJECT SECTION -->
+    <section class="section ai-feature-section" id="featured-ai">
+      <div class="container">
+        <div class="glass-card ai-feature-card">
+          <div class="ai-feature-header text-center">
+            <span class="banner-badge highlight-badge">SPECIAL FEATURED AI PROJECT</span>
+            <h2 class="ai-title">Automated Insurance Claim Damage Appraisal Agent</h2>
+            <p class="ai-subtitle">Exploring Knowledge Representation & First-Order Logic</p>
+          </div>
+
+          <!-- Animated Workflow Flowchart -->
+          <div class="ai-workflow">
+            <div class="flow-step">
+              <div class="step-icon"><i class="fa-solid fa-file-import"></i></div>
+              <span class="step-label">Input</span>
+            </div>
+            <div class="flow-arrow"><i class="fa-solid fa-angle-right"></i></div>
+
+            <div class="flow-step">
+              <div class="step-icon"><i class="fa-solid fa-database"></i></div>
+              <span class="step-label">Knowledge Base</span>
+            </div>
+            <div class="flow-arrow"><i class="fa-solid fa-angle-right"></i></div>
+
+            <div class="flow-step highlight-step">
+              <div class="step-icon"><i class="fa-solid fa-cogs"></i></div>
+              <span class="step-label">Inference Engine</span>
+            </div>
+            <div class="flow-arrow"><i class="fa-solid fa-angle-right"></i></div>
+
+            <div class="flow-step">
+              <div class="step-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+              <span class="step-label">Decision</span>
+            </div>
+            <div class="flow-arrow"><i class="fa-solid fa-angle-right"></i></div>
+
+            <div class="flow-step">
+              <div class="step-icon"><i class="fa-solid fa-file-invoice"></i></div>
+              <span class="step-label">Output</span>
+            </div>
+          </div>
+
+          <!-- Breakdown Grid -->
+          <div class="ai-breakdown-grid">
+            <div class="breakdown-col">
+              <h4><i class="fa-solid fa-triangle-exclamation"></i> Problem</h4>
+              <p>Insurance claim damage assessment can involve repetitive evaluation of vehicle damage information.</p>
+            </div>
+
+            <div class="breakdown-col">
+              <h4><i class="fa-solid fa-compass"></i> Approach</h4>
+              <p>Use knowledge representation and logical reasoning to represent facts and rules effectively.</p>
+            </div>
+
+            <div class="breakdown-col full-width">
+              <h4><i class="fa-solid fa-microchip"></i> Concepts Used</h4>
+              <div class="tech-tags">
+                <span class="tag">Constants</span>
+                <span class="tag">Variables</span>
+                <span class="tag">Predicates</span>
+                <span class="tag">Functions</span>
+                <span class="tag">Knowledge Base</span>
+                <span class="tag">First-Order Logic</span>
+                <span class="tag">Forward Chaining</span>
+                <span class="tag">Backward Chaining</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">ACADEMIC PATH</span>
+          <h2 class="section-title">Education</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="timeline single-line">
+          <div class="timeline-item full-width">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-date">2023 - Present (Currently 2nd Year)</div>
+              <h3 class="timeline-title">Amal Jyothi College of Engineering</h3>
+              <h4 class="timeline-subtitle"><i class="fa-solid fa-graduation-cap"></i> 2nd Year Engineering Student</h4>
+
+              <div class="edu-details-grid">
+                <div class="edu-detail">
+                  <span class="label">Engineering Branch:</span>
+                  <span class="val">[Editable Field - e.g. Computer Science & Engineering]</span>
+                </div>
+                <div class="edu-detail">
+                  <span class="label">Expected Graduation:</span>
+                  <span class="val">[Editable Field - e.g. 2027]</span>
+                </div>
+                <div class="edu-detail">
+                  <span class="label">CGPA:</span>
+                  <span class="val">[Editable Placeholder]</span>
+                </div>
+                <div class="edu-detail">
+                  <span class="label">Relevant Coursework:</span>
+                  <span class="val">Data Structures, Object-Oriented Programming, Computer Architecture, Discrete Mathematics.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">ACTIVITIES & GROWTH</span>
+          <h2 class="section-title">Experience & <span class="gradient-text">Activities</span></h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="exp-notice glass-card text-center">
+          <i class="fa-solid fa-hammer exp-icon"></i>
+          <h3>Building Experience Through Projects</h3>
+          <p>As a 2nd-year student, I am actively developing technical knowledge through hands-on academic work and student tech events.</p>
+        </div>
+
+        <div class="experience-grid">
+          <div class="exp-card glass-card">
+            <div class="exp-icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Academic Projects</h3>
+            <p>Projects developed as part of engineering coursework.</p>
+          </div>
+
+          <div class="exp-card glass-card">
+            <div class="exp-icon"><i class="fa-solid fa-people-group"></i></div>
+            <h3>Team Projects</h3>
+            <p>Collaborative college projects and group learning.</p>
+          </div>
+
+          <div class="exp-card glass-card">
+            <div class="exp-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Technical Activities</h3>
+            <p>Workshops, seminars, technical events, and coding activities.</p>
+          </div>
+
+          <div class="exp-card glass-card">
+            <div class="exp-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Future Opportunities</h3>
+            <p>Internships and professional experience will be updated here as I progress.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">CREDENTIALS</span>
+          <h2 class="section-title">Certifications</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="certifications-grid">
+          <div class="cert-card glass-card placeholder-card">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <h3>[Editable Certification Title]</h3>
+            <span class="cert-org">Issuing Organization</span>
+            <span class="cert-date">Date / Year</span>
+            <span class="cert-id">Credential ID: [Placeholder]</span>
+          </div>
+
+          <div class="cert-card glass-card placeholder-card">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <h3>[Editable Certification Title]</h3>
+            <span class="cert-org">Issuing Organization</span>
+            <span class="cert-date">Date / Year</span>
+            <span class="cert-id">Credential ID: [Placeholder]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">MILESTONES</span>
+          <h2 class="section-title">Achievements & <span class="gradient-text">Activities</span></h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="achievements-box glass-card text-center">
+          <i class="fa-solid fa-trophy ach-icon"></i>
+          <h3>More achievements coming soon.</h3>
+          <p>Actively participating in coding activities, technical events, workshops, and college symposiums.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVELOPER PROFILES (FIND ME ONLINE) -->
+    <section class="section online-section" id="online">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">PROFILES</span>
+          <h2 class="section-title">Find Me <span class="gradient-text">Online</span></h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="online-grid">
+          <a href="https://github.com" target="_blank" class="profile-card glass-card">
+            <div class="profile-icon"><i class="fa-brands fa-github"></i></div>
+            <h3>GitHub</h3>
+            <p>For project repositories.</p>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" class="profile-card glass-card">
+            <div class="profile-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <h3>LinkedIn</h3>
+            <p>For professional networking.</p>
+          </a>
+
+          <a href="https://leetcode.com" target="_blank" class="profile-card glass-card">
+            <div class="profile-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>LeetCode</h3>
+            <p>For coding practice.</p>
+          </a>
+
+          <a href="https://hackerrank.com" target="_blank" class="profile-card glass-card">
+            <div class="profile-icon"><i class="fa-brands fa-hackerrank"></i></div>
+            <h3>HackerRank</h3>
+            <p>For programming practice.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY JOURNEY TIMELINE -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">EVOLUTION</span>
+          <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="journey-grid">
+          <div class="journey-card glass-card">
+            <div class="j-step">01</div>
+            <h3>Started Engineering</h3>
+            <p>Beginning the journey in engineering and computer science at Amal Jyothi College of Engineering.</p>
+          </div>
+
+          <div class="journey-card glass-card">
+            <div class="j-step">02</div>
+            <h3>Learning Programming</h3>
+            <p>Building foundations with Python and Java.</p>
+          </div>
+
+          <div class="journey-card glass-card">
+            <div class="j-step">03</div>
+            <h3>Exploring Data Structures</h3>
+            <p>Understanding algorithms and problem-solving techniques.</p>
+          </div>
+
+          <div class="journey-card glass-card">
+            <div class="j-step">04</div>
+            <h3>Exploring AI</h3>
+            <p>Learning knowledge representation, logic, and inference.</p>
+          </div>
+
+          <div class="journey-card glass-card">
+            <div class="j-step">05</div>
+            <h3>Building Projects</h3>
+            <p>Applying classroom knowledge through practical projects.</p>
+          </div>
+
+          <div class="journey-card glass-card">
+            <div class="j-step">06</div>
+            <h3>What's Next?</h3>
+            <p>Exploring more advanced technologies and real-world development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME CTA SECTION -->
+    <section class="section resume-cta-section" id="resume-cta">
+      <div class="container text-center">
+        <div class="glass-card cta-card">
+          <h2>Want to Know More About My Journey?</h2>
+          <p>Explore my education, technical skills, projects, and learning journey through my resume.</p>
+          <a href="#" class="btn btn-crimson btn-lg">
+            <i class="fa-solid fa-download"></i>
+            <span>Download Resume</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-desc">Have a project idea, internship opportunity, or just want to connect? Feel free to reach out.</p>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <div class="glass-card contact-card">
+              <h3>Direct Contact</h3>
+              <div class="info-list">
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="info-text">
+                    <span class="label">Phone Number</span>
+                    <a href="tel:+918086243346" class="val">+91 8086243346</a>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="info-text">
+                    <span class="label">Email</span>
+                    <a href="mailto:adrian.gibi10@gmail.com" class="val">adrian.gibi10@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
+                  <div class="info-text">
+                    <span class="label">College</span>
+                    <span class="val">Amal Jyothi College of Engineering</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="info-text">
+                    <span class="label">Location</span>
+                    <span class="val">Kerala, India</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <div class="glass-card form-card">
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" required placeholder="Your Name" />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required placeholder="your.email@example.com" />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number (Optional)</label>
+                  <input type="tel" id="phone" placeholder="+91 9876543210" />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" required placeholder="Subject" />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" rows="5" required placeholder="Your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-crimson btn-block" id="submit-btn">
+                  <span>Send Message</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+              <div id="form-toast" class="form-toast hidden"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-text">&lt;AdrianGibi<span class="logo-accent">/&gt;</span></span>
+        <p>2nd Year Engineering Student | Developer | Learner</p>
+        <p class="footer-email"><a href="mailto:adrian.gibi10@gmail.com">adrian.gibi10@gmail.com</a></p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p>&copy; 2026 Adrian Gibi. All rights reserved.</p>
+        <p class="tagline">Designed & Built with curiosity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript Script -->
+  <script src="main.js"></script>
+</body>
+</html>
